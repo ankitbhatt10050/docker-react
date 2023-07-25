@@ -8,7 +8,7 @@ RUN npm install
 # https://stackoverflow.com/questions/67087735/eacces-permission-denied-mkdir-usr-app-node-modules-cache-how-can-i-creat
 # volumes will not work until you copy paste this command 
 
-RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
+# RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
 
 COPY . .
 
